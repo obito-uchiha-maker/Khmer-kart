@@ -1,0 +1,8 @@
+{
+  "appId": "com.khmerkart.game",
+  "appName": "Khmer Kart V2",
+  "webDir": "dist",
+  "bundledWebRuntime": false,
+  "server": { "androidScheme": "https" },
+  "android": { "allowMixedContent": false }
+}

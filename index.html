@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="km">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+  <meta name="theme-color" content="#071a1d" />
+  <meta name="description" content="KHMER KART V2 — 3D Cambodian kart racing" />
+  <title>KHMER KART V2 🇰🇭</title>
+</head>
+<body>
+  <div id="app">
+    <header class="topbar"><div class="brand"><span class="flag">🇰🇭</span><div><b>KHMER <em>KART</em></b><small>3D • RACE THE KINGDOM</small></div></div><button id="sound" class="small-btn">🔊 សំឡេង</button></header>
+    <main>
+      <section class="intro"><p class="eyebrow">អច្ឆរិយៈនៃកម្ពុជា</p><h1>ប្រណាំងក្នុងពិភព <span>3D</span></h1><p>បើក Tuk-Tuk ប្រណាំងជុំវិញប្រាសាទ និងផ្លូវព្រៃត្រូពិច។</p></section>
+      <section class="game-shell">
+        <div class="hud"><div><small>ទីតាំង</small><b id="position">1/4</b></div><div><small>ជុំទី</small><b id="lap">1/3</b></div><div><small>ល្បឿន</small><b id="speed">0 <i>KM/H</i></b></div><div><small>ពេលវេលា</small><b id="timer">00:00</b></div></div>
+        <div id="scene" aria-label="3D Khmer Kart racing scene"></div>
+        <div id="overlay" class="overlay"><div class="modal"><div class="trophy">🏁</div><p class="eyebrow">ANGKOR GRAND PRIX</p><h2 id="overlay-title">ត្រៀមប្រណាំងហើយឬនៅ?</h2><p id="overlay-copy">ប្រណាំង 3 ជុំ ជាមួយគូប្រកួត AI។</p><button id="start" class="primary">ចាប់ផ្ដើមប្រណាំង →</button></div></div>
+        <div class="mobile-controls"><button data-key="left" aria-label="បត់ឆ្វេង">◀</button><button data-key="brake" aria-label="ហ្វ្រាំង">▼</button><button id="item" aria-label="ប្រើ Turbo">⚡</button><button data-key="right" aria-label="បត់ស្ដាំ">▶</button><button data-key="gas" aria-label="បង្កើនល្បឿន">▲</button></div>
+      </section>
+      <section class="bottom"><article><p class="eyebrow">TRACK 01</p><h2>🏯 អង្គរវត្ត — Angkor Run</h2><p>ផ្លូវប្រណាំង 3D • ដើមត្នោត • ប្រាសាទ • Tuk-Tuk</p></article><article><p class="eyebrow">YOUR BEST</p><h2 id="best">--:--</h2><p>ពិន្ទុល្អបំផុតរក្សាទុកលើឧបករណ៍នេះ។</p></article></section>
+      <footer>KHMER KART V2 · Original Khmer-themed game 🇰🇭</footer>
+    </main>
+  </div>
+  <script type="module" src="/src/game.js"></script>
+</body>
+</html>
